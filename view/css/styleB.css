@@ -1,0 +1,890 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body {
+    margin:0;
+    height:100%;
+    padding: 0; 
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+  
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+.top2{
+    height: 9%;
+    background-color: rgb(40, 100, 150);
+    position: relative;
+}
+
+ul.navBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:absolute;
+    bottom: 0;
+}
+
+.navBar li {
+    float: left;
+    background-color: #111;
+}
+
+.navBar li:not(:last-child){
+    border-right: 1px solid white;
+}
+
+.navBar input[type=submit] {
+    background-color:black;
+    font-size:130%;
+    padding: 7px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navBar input[type=submit]:hover:not(.active) {
+    background-color: white;
+    color:black;
+}
+
+.navBar input[type=submit].active {
+    background-color: brown;
+}
+
+.usernameTR{
+    display: inline;
+    font-size: 100%;
+}
+
+.usernameAK:hover{
+    border-bottom: 2px solid white;
+}
+
+.kolom{
+    float: left;
+    word-wrap:break-word;
+    padding:1px;
+}
+
+.kolom.left{
+    width:10%; 
+}
+
+.kolom.mid{
+    width:63%;
+    height:100%;
+    padding-left:5%;
+}
+
+.kolom.right{
+    width:27%;
+    height: 100%;
+}
+
+.rowA{
+    height:100%;
+}
+
+.rowA:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .kolom.left, .kolom.mid, .kolom.right{
+        width: 100%;
+    }
+}
+
+.barKanan{
+    float:left;
+    width:20%;
+    height:100%;
+}
+
+.uTopRight{
+    font-size: 200%;
+    color:white;
+}
+
+.logOut{
+    border:none;
+    background-color: rgb(15, 175, 0);
+    padding:10px;
+    color:white;
+    cursor:pointer;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.linkLogo{
+    color:inherit;
+    text-decoration: none;
+}
+
+.logOut:hover{
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+}
+
+.top2LeftLogo{
+    margin-left:5%;
+    margin-top:3%;
+    text-align: center;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    /*
+    padding-left: 1%;
+    padding-right: 1%;
+    */
+    width: 100%;
+    height: 100%;
+    font-family: 'PoppinsBold';
+}
+
+#logoHeart{
+    font-size: 350%;
+}
+
+.column {
+    float: left;
+    padding:10px;
+}
+
+.column.left{
+    width:15%;
+}
+
+.column.mid{
+    width:35%;
+}
+
+.column.right{
+    width:50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column.left, .column.mid, .column.right{
+        width: 100%;
+    }
+}
+
+p.midJudul{
+    margin-top:15%;
+    text-align:left;
+    color: green;
+    font-size: 300%;
+    font-family: 'PoppinsBold';
+
+}
+
+p.midBody{
+    text-align:justify;
+    font-size: 135%;
+    font-family: 'PoppinsRegular';
+}
+
+p.or{
+    font-size: 175%;
+    font-family: 'PoppinsBold';
+    margin-left:15%
+}
+
+.buttonWrapper{
+    text-align: left;
+}
+
+.startD{
+    font-size:100%;
+    border:none;
+    background-color: rgb(15, 175, 0);
+    box-shadow: 2px 4px black;
+    width:40%;
+    padding:15px;
+    color:white;
+    cursor:pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+
+.startD:hover{
+    background-color: white;
+    color: black;
+}
+
+.kolomB{
+    float: left;
+    padding:1px;
+}
+
+.kolomB.left{
+    width:33%;
+}
+
+.kolomB.mid{
+    height:100%;
+    overflow: hidden;
+    padding-top: 4%;
+    text-align: center;
+    width:33%;
+}
+
+.kolomB.right{
+    width:33%;
+}
+.rowB{
+    height:100%;
+}
+.rowB:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .kolomB.left, .kolomB.mid, .kolomB.right{
+        width: 100%;
+    }
+}
+
+p.midJudulB{
+    text-align:left;
+    font-size: 300%;
+    font-family: 'PoppinsBold';
+    display:inline;
+}
+
+.dBox{
+    margin:auto;
+    height:60%;
+    width:75%;
+    border: 2px solid black;
+    background-color: lightgrey;
+    padding-left: 2%;
+    padding-top:7%;
+    margin-top:3%;
+    overflow: auto;    
+}
+
+.dJud{
+    font-family: 'PoppinsRegular';
+    display: inline;
+    font-size:200%;
+}
+
+.selectS{
+    width:20%;
+    height: 8%;
+    font-size:100%;
+}
+
+.kolomC{
+    float: left;
+    word-wrap:break-word;
+    padding:1px;
+}
+
+.kolomC.left{
+    width:15%;
+    background-color: aquamarine;    
+}
+
+.kolomC.mid{
+    width:70%;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.kolomC.right{
+    width:15%;
+    background-color: chocolate;
+}
+.rowC{
+    margin-top:1%;
+}
+.rowC:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .kolomC.left, .kolomC.mid, .kolomC.right{
+        width: 100%;
+    }
+}
+
+.cJud{
+    font-family: 'PoppinsBold';
+    display: inline;
+    font-size:300%;
+    letter-spacing: 1px;
+}
+
+.cBox{
+    height:50%;
+    width:100%;
+    border: 2px solid black;
+    background-color: rgb(226, 228, 255);
+}
+
+.cPos{
+    font-family: 'PoppinsRegular';
+    display: inline;
+    font-size:200%;
+}
+
+.kolomC1{
+    float: left;
+    word-wrap:break-word;
+    padding:1px;
+}
+
+.kolomC1.left{
+    width:28%;
+    height:100%;
+    border-right: 2px solid black;
+    text-align: left;
+    padding-left: 2%;
+    padding-top:1%;
+    background-color: aquamarine;    
+}
+
+.kolomC1.right{
+    width:72%;
+    background-color: chocolate;
+}
+
+.rowC1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .kolomC1.left, .kolomC1.right{
+        width: 100%;
+    }
+}
+
+.arrDis{
+    width: 85%;
+    background-color: white;
+    height: 75%;
+    padding-top: 1%;
+}
+
+ul.diseases1{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.diseases1 li {
+    font-size: 135%;
+    margin-top:10px;
+    background-color: #111;
+}
+
+.arrOfB {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+
+.diseases1 li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+
+.active1 {
+    background-color: brown;
+}
+
+.currentS{
+    margin:auto;
+    height:60%;
+    width:70%;
+    border:1px solid darkgreen;
+    overflow: auto;
+    background-color: white;
+}
+
+.tengahCek{
+    word-wrap: break-word;
+    text-align:left;
+    margin-left: 25%;
+    width:70%;
+}
+
+.dBox input[type=button] {
+    margin-top:8%;
+    background-color:brown;
+    width:30%;
+    height:10%;
+    font-size:100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dBox input[type=button]:hover {
+    border:1px solid white;
+}
+
+.currentS form{
+    font-family: 'PoppinsRegular';
+}
+
+.currentS form input{
+    font-family: 'PoppinsRegular';
+}
+
+.currentS p{
+    font-family: 'PoppinsRegular';
+    display: inline;
+}
+
+.currentBox{
+    height: 60%;
+    width: 80%;
+    border: 1px solid black;
+    background-color: #4CAF50;
+}
+.diWrapper{
+    text-align: right;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding:5px;
+    width: 100%;
+    background-color: rgb(40, 100, 150);
+    text-align: center;
+    font-family: 'PoppinsRegular';
+  }
+
+.footer a{
+    text-decoration: none;
+    color : black;
+}
+
+.footer a:hover{
+    color:white;
+}
+
+#dateform p{
+    display: inline-block;
+    font-family: 'PoppinsRegular';
+    margin: 0;
+}
+#dateform input{
+    display: inline-block;
+    font-family: 'PoppinsRegular';
+    margin: 0;
+}
+/*Profile-----------------------------------------------------------------------------------------------*/
+#divprofile {
+    text-align: center;
+    margin: auto;
+    font-family: 'PoppinsRegular';
+    background-color: lightgray;
+    width : 40%;
+    height: 650px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#divprofile img{
+    width:250px;
+    height:250px;
+}
+
+#divprofile input[type="password"]{
+    font-family: 'PoppinsRegular';
+    width: 40%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#divprofile input[type="submit"]{
+    font-family: 'PoppinsRegular';
+}
+
+#divprofile h1{
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: 'PoppinsRegular';
+}
+
+#divprofile fieldset{
+    width: 70%;
+    margin: auto;
+}
+
+#divprofile fieldset input[type="submit"]{
+    width:150px;
+}
+
+#divprofile fieldset select{
+    width:200px;
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'PoppinsRegular';
+    color:black;
+}
+/*Profile-----------------------------------------------------------------------------------------------*/
+/*Company-----------------------------------------------------------------------------------------------*/
+
+#divlogo{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'PoppinsRegular';
+}
+
+#logo{
+    font-size: 100px;
+}
+
+div.d1{
+	width:60%;
+	margin:auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width:90%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*Company-----------------------------------------------------------------------------------------------*/
+/*Report-----------------------------------------------------------------------------------------------*/
+table{
+    border: solid 1px black;
+    border-collapse:collapse;
+}
+
+table tr{
+    border: solid 1px black;
+}
+
+table th{
+    border: solid 1px black;
+}
+
+table td{
+    border: solid 1px black;
+}
+/*Report-----------------------------------------------------------------------------------------------*/
+
+.kolomE{
+    float: left;
+    padding:1px;
+}
+
+.kolomE.left{
+    width:15%;
+}
+
+.kolomE.mid{
+    height:100%;
+    overflow: hidden;
+    padding-top: 4%;
+    width:50%;
+}
+
+.kolomE.right{
+    width:35%;
+}
+.rowD{
+    height:100%;
+}
+.rowD:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .kolomE.left, .kolomE.mid, .kolomE.right{
+        width: 100%;
+    }
+}
+
+.eBox{
+    height:50%;
+    width:75%;
+    background-color: azure;
+    padding-left: 2%;
+    padding-top:2%;
+    margin-top:3%;
+    overflow: auto;
+    border:1px solid black;
+}
+
+p.eMidJudul{
+    display: inline;
+    text-align:left;
+    color: black;
+    font-size: 300%;
+    font-family: 'PoppinsBold';
+
+}
+
+.eCurrentS{
+    height:70%;
+    width:76%;
+}
+
+.kolomF{
+    float: left;
+    padding:1px;
+}
+
+.kolomF.left{
+    width:45%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: white;
+    overflow: auto;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.kolomF.mid{
+    height:100%;
+    overflow: hidden;
+    padding-top: 4%;
+    width:10%;
+}
+
+.kolomF.right{
+    width:45%;
+    height: 100%;
+    background-color: white;
+    overflow:auto;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+.rowF{
+    height:100%;
+}
+.rowF:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .kolomF.left, .kolomF.mid, .kolomF.right{
+        width: 100%;
+    }
+}
+
+.listing ul{
+    list-style-type:none;
+    padding: 0;
+    margin:0;
+}
+
+.listing li{
+    display:block;
+    padding-left:0px;
+    float:left;
+    margin-top:2%;
+}
+
+.listing li:not(:first-child){
+    margin-top:2%;
+}
+
+.listing li p{
+    display: block;
+    background-color: brown;    
+}
+
+.listBlock2{    
+    background-color: brown;   
+}
+
+.listBlock{
+    height: 100%;
+    width:100%;
+    padding:10px;
+    font-size:120%;
+    font-family: 'PoppinsRegular';
+}
+
+.judulS1{
+    display: inline;
+    font-size: 200%;
+}
+
+.w1{
+    padding-top:2%;
+    padding-left:2%;
+    height: 15%;
+}
+
+.w2{
+    padding-top:2%;
+    padding-left:2%;
+    height: 25%;
+}
+
+.tableWrapper{
+    padding-left:2%;
+    padding-top:1%;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+.judulG{
+    display:inline;
+    font-family: 'PoppinsRegular';    
+}
+
+.judulGWrapper{
+    margin-left:2%;
+    margin-top:3%;
+}
+
+.reportT{
+    font-family: 'PoppinsRegular';
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.reportT td, .reportT th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.reportT tr:nth-child(even){background-color: #eb8686;}
+
+.reportT th {
+    text-align: center;
+    background-color: azure;
+}
+
+.reportT td form input{
+    font-family: 'PoppinsRegular';
+}
+
+#accfilt{
+    margin-left: 2%;
+    font-family: 'PoppinsRegular';
+}
+
+#accfilt input{
+    font-family: 'PoppinsRegular';
+}
