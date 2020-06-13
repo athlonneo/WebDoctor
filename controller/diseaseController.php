@@ -51,10 +51,31 @@
             return View::createViewB('report.php',[
 				"report"=>$report
 			]);
-        }
+		}
+		
+		
+		public function view_details(){
+			$diseases = $this->getDisease();
+			return View::createViewB('details.php',[
+				"diseases"=>$diseases
+			]);
+		}
+
+		public function view_disease(){
+			$disease = $this->getDisease1($_GET['id']);
+			return View::createViewB('disease.php',[
+				"disease"=>$disease
+			]);
+		}
 
 		public function getDisease(){
-			$query = "SELECT * FROM disease";
+			$query = "SELECT * FROM disease ORDER BY name";
+            $query_result = $this->db->executeSelectQuery($query);
+            return $query_result;
+		}
+
+		public function getDisease1($id){
+			$query = "SELECT * FROM disease WHERE idD=$id";
             $query_result = $this->db->executeSelectQuery($query);
             return $query_result;
 		}

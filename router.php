@@ -72,6 +72,16 @@
                 $userCtrl = new UserController();
                 echo $userCtrl->view_account();
                 break;
+            case $baseURL.'/details':
+                require_once "controller/DiseaseController.php";
+                $disCtrl = new DiseaseController(); 
+                echo $disCtrl->view_details();
+                break; 
+            case $baseURL.'/disease':
+                require_once "controller/DiseaseController.php";
+                $disCtrl = new DiseaseController(); 
+                echo $disCtrl->view_disease();
+                break; 
             default:
                 header('Location: index');
                 break;

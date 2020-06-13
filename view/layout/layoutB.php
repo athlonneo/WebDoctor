@@ -38,6 +38,11 @@
                             <input type="submit" value="History">
                         </form>
                     </li>
+                    <li>
+                        <form method="GET" action="details" >
+                            <input type="submit" value="Details">
+                        </form>
+                    </li>
                 </ul>
             </div>
             <div class="kolom right">
